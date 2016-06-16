@@ -10,5 +10,7 @@ git branch [develop]
 git checkout -b develop
 git branch -d deveop
 
+git merge develop
+
 git pull origin master
 git push origin master
