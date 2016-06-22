@@ -4,15 +4,11 @@ git remote add origin https://github.com/dylens/demoy.git
 git clone https://github.com/dylens/demoy.git
 
 git status
-#add into/remove from index
-git add/reset [-p][-e] *
-
-#discard changes in working directory
-git checkout -- RD.md
+git add *
 
 git branch [develop]
 git checkout -b develop
-git branch -d develop
+git branch -d deveop
 
 git merge develop
 
