@@ -30,6 +30,8 @@
             <version>1.4.3</version>
             <scope>compile</scope>
         </dependency>
+
+        <!--for test-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -52,12 +54,6 @@
             <groupId>org.powermock</groupId>
             <artifactId>powermock-module-junit4-rule-agent</artifactId>
             <version>1.6.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.javassist</groupId>
-                    <artifactId>javassist</artifactId>
-                </exclusion>
-            </exclusions>
             <scope>test</scope>
         </dependency>
         <dependency>
