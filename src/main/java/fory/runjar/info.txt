@@ -1,0 +1,3 @@
+//path=src
+jar cvfm door.jar ../MANIFEST.MF ../target/classes/fory/runjar/Door.class
+java -jar door.jar
