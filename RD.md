@@ -9,7 +9,10 @@ git add/reset *
 git commit -m""
 
 git log [--stat]
-git revert <commit>
+git revert <commit> (撤销指定的版本，撤销也会作为一次提交进行保存)
+    git revert HEAD (撤销前一次 commit)
+    git revert HEAD^ (撤销前前一次 commit)
+
 
 #discard changes in working directory
 git checkout -- RD.md
