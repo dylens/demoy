@@ -18,13 +18,14 @@ git revert <commit> (撤销指定的版本，撤销也会作为一次提交进行保存)
 
 
 #discard changes in working directory
-git checkout -- RD.md
+git checkout -- RD.md (丢弃index中的修改)
+    git checkout -b develop (创建并切换到develop分支)
 
 git branch [develop]
-git checkout -b develop
-git branch -d develop
+    git branch -d develop (删除本地develop分支)
 
 git merge develop
 
 git pull origin master
 git push origin master
+    git push origin --delete <branchName> (删除远程分支)
