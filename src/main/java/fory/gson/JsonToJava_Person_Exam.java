@@ -9,10 +9,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-public class JsonToJava {
+public class JsonToJava_Person_Exam {
 
     public static void main(String[] args) throws IOException {
-        InputStream resourceAsStream = JsonToJava.class.getResourceAsStream("/server.json");
+        InputStream resourceAsStream = JsonToJava_Person_Exam.class.getResourceAsStream("/server.json");
         try(Reader reader = new InputStreamReader(resourceAsStream, "UTF-8")){
             Gson gson = new GsonBuilder().create();
             Person p = gson.fromJson(reader, Person.class);
