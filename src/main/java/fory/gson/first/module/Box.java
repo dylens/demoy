@@ -1,4 +1,4 @@
-package fory.gson.module;
+package fory.gson.first.module;
 
 import com.google.gson.annotations.SerializedName;
 

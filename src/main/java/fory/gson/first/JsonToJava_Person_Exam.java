@@ -1,8 +1,8 @@
-package fory.gson;
+package fory.gson.first;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import fory.gson.module.Person;
+import fory.gson.first.module.Person;
 
 import java.io.IOException;
 import java.io.InputStream;

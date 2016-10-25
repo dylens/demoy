@@ -1,4 +1,4 @@
-package fory.gson.module;
+package fory.gson.first.module;
 
 public class Exam {
 

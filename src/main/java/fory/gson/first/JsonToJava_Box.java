@@ -1,13 +1,14 @@
-package fory.gson;
+package fory.gson.first;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import fory.gson.module.Box;
+import fory.gson.first.module.Box;
 
 public class JsonToJava_Box {
 
     public static void main(final String[] args) {
         final GsonBuilder builder = new GsonBuilder();
+        builder.setPrettyPrinting();
         final Gson gson = builder.create();
 
         final Box box = new Box();
