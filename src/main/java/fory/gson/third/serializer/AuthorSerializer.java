@@ -1,4 +1,4 @@
-package fory.gson.third.serialiser;
+package fory.gson.third.serializer;
 
 import com.google.gson.*;
 import fory.gson.third.module.Author;

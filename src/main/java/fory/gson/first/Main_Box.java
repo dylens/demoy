@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import fory.gson.first.module.Box;
 
-public class JsonToJava_Box {
+public class Main_Box {
 
     public static void main(final String[] args) {
         final GsonBuilder builder = new GsonBuilder();

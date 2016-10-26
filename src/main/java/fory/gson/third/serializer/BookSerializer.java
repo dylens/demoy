@@ -1,4 +1,4 @@
-package fory.gson.third.serialiser;
+package fory.gson.third.serializer;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -8,7 +8,7 @@ import fory.gson.third.module.Book;
 
 import java.lang.reflect.Type;
 
-public class BookSerialiser implements JsonSerializer<Book> {
+public class BookSerializer implements JsonSerializer<Book> {
 
     @Override
     public JsonElement serialize(Book book, Type typeOfSrc, JsonSerializationContext context) {

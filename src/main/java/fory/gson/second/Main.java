@@ -3,13 +3,13 @@ package fory.gson.second;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import fory.gson.second.module.Book;
-import fory.gson.second.serialiser.BookSerialiser;
+import fory.gson.second.serializer.BookSerializer;
 
-public class JsonToJava {
+public class Main {
 
     public static void main(String[] args){
         GsonBuilder builder=new GsonBuilder();
-        builder.registerTypeAdapter(Book.class, new BookSerialiser());
+        builder.registerTypeAdapter(Book.class, new BookSerializer());
         builder.setPrettyPrinting();
         Gson gson = builder.create();
 

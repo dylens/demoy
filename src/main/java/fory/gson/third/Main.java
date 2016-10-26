@@ -4,14 +4,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import fory.gson.third.module.Author;
 import fory.gson.third.module.Book;
-import fory.gson.third.serialiser.AuthorSerializer;
-import fory.gson.third.serialiser.BookSerialiser;
+import fory.gson.third.serializer.AuthorSerializer;
+import fory.gson.third.serializer.BookSerializer;
 
-public class JsonToJava {
+public class Main {
 
     public static void main(String[] args) {
         GsonBuilder builder = new GsonBuilder();
-        builder.registerTypeAdapter(Book.class, new BookSerialiser());
+        builder.registerTypeAdapter(Book.class, new BookSerializer());
         builder.registerTypeAdapter(Author.class, new AuthorSerializer());
         builder.setPrettyPrinting();
 
