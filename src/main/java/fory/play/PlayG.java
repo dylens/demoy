@@ -6,6 +6,7 @@ public class PlayG {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         FutureTask future = new FutureTask<>(() -> {
+            System.out.println("starting");
             for (int i = 0; i < 10; i++) {
                 Thread.sleep(10);
             }
@@ -13,7 +14,6 @@ public class PlayG {
         });
 
         Executor executor = new ThreadPoolExecutor(1, 1, 1, TimeUnit.MINUTES, new LinkedBlockingQueue<>(1));
-
         executor.execute(future);
 
         while (true) {
@@ -26,8 +26,6 @@ public class PlayG {
             }
         }
         System.out.println(future.get());
-
-
     }
 
 }
