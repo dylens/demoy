@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class DyeHttp {
+public class DyeHttpClient {
 
     public void start() throws IOException {
         String url = "http://localhost:8090/dye";

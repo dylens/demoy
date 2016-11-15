@@ -9,7 +9,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 
 
-public class DyeHttpTest {
+public class DyeHttpClientTest {
 
     WireMockServer wireMockServer;
 
@@ -29,7 +29,7 @@ public class DyeHttpTest {
 
     @Test
     public void testStart() throws Exception {
-        DyeHttp client = new DyeHttp();
+        DyeHttpClient client = new DyeHttpClient();
         client.start();
 
         wireMockServer.stop();
