@@ -30,3 +30,5 @@ git pull origin master
 git push origin master
     git push origin --delete <branchName> (删除远程分支) / git push origin :<branchName> (推送空分支也相当于删除远程分支)
     git push origin --delete tag <tagName> (删除远程tag) / git tag -d <tagName>
+
+gitk (查看所有提交的明细)
