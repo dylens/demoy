@@ -32,3 +32,8 @@ git push origin master
     git push origin --delete tag <tagName> (删除远程tag) / git tag -d <tagName>
 
 gitk (查看所有提交的明细)
+
+IDEA git快捷键：
+    ctrl+t pull
+    ctrl+k commit
+    ctrl+shift+k push
