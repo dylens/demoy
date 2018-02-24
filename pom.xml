@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>server</module>
+        <module>protocol</module>
     </modules>
     <groupId>demoy</groupId>
     <artifactId>demoy</artifactId>
