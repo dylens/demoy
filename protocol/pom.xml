@@ -132,6 +132,24 @@
                             <clearOutputDir>false</clearOutputDir>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>c</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                        <configuration>
+                            <encoding>utf-8</encoding>
+                            <extension>true</extension>
+                            <packageName>demoy.protocol3</packageName>
+                            <sources>
+                                <source>src/main/a1/testCases.xsd</source>
+                            </sources>
+                            <xjbSources>
+                                <xjbSource>src/main/a2/template.xjb</xjbSource>
+                            </xjbSources>
+                            <clearOutputDir>false</clearOutputDir>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
