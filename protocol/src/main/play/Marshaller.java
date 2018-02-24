@@ -9,6 +9,7 @@ import javax.xml.transform.Source;
 public class Marshaller {
 
     private static Jaxb2Marshaller marshaller = createMarshaller(Testcases.class);
+//    private static Jaxb2Marshaller marshaller = createMarshaller(Object.class);
 
     public static String marshal(Object o) {
         Result result = new StringResult();

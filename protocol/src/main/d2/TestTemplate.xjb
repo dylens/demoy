@@ -2,9 +2,9 @@
               xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
               xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-    <jxb:bindings schemaLocation="testCases.xsd" node="//xsd:schema">
+    <jxb:bindings schemaLocation="../d1/Test.xsd" node="//xsd:schema">
         <jxb:schemaBindings>
-            <jxb:package name="xsd"/>
+            <jxb:package name="test"/>
         </jxb:schemaBindings>
     </jxb:bindings>
 

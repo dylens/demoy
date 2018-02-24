@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Test">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="case" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="case">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="summary" type="xs:string"/>
+                <xs:element name="preconditions" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
