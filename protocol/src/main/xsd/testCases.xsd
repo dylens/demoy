@@ -16,4 +16,21 @@
             <xs:attribute name="name" type="xs:string"/>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="A">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="B" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="B">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="A" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

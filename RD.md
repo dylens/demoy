@@ -6,34 +6,36 @@ git clone https://github.com/dylens/demoy.git
 git status
 #add into/remove from index
 git add/reset *
-    git reset --soft <commit> (Èç¹û½øĞĞÁËĞÂµÄcommit£¬ÏëÒªresetµôÖ¸¶¨°æ±¾µÄcommit)
+    git reset --soft <commit> (å¦‚æœè¿›è¡Œäº†æ–°çš„commitï¼Œæƒ³è¦resetæ‰æŒ‡å®šç‰ˆæœ¬çš„commit)
 
 git commit -m""
-    git commit --amend (¶ÔÉÏÒ»´ÎµÄÌá½»×öĞŞ¸Ä)
+    git commit --amend (å¯¹ä¸Šä¸€æ¬¡çš„æäº¤åšä¿®æ”¹)
 
 git log [--stat]
-git revert <commit> (³·ÏúÖ¸¶¨µÄ°æ±¾£¬³·ÏúÒ²»á×÷ÎªÒ»´ÎÌá½»½øĞĞ±£´æ)
-    git revert HEAD (³·ÏúÇ°Ò»´Î commit)
-    git revert HEAD^ (³·ÏúÇ°Ç°Ò»´Î commit)
-
+git revert <commit> (æ’¤é”€æŒ‡å®šçš„ç‰ˆæœ¬ï¼Œæ’¤é”€ä¹Ÿä¼šä½œä¸ºä¸€æ¬¡æäº¤è¿›è¡Œä¿å­˜)
+    git revert HEAD (æ’¤é”€å‰ä¸€æ¬¡ commit)
+    git revert HEAD^ (æ’¤é”€å‰å‰ä¸€æ¬¡ commit)
 
 #discard changes in working directory
-git checkout -- RD.md (¶ªÆúindexÖĞµÄĞŞ¸Ä)
-    git checkout -b develop (´´½¨²¢ÇĞ»»µ½develop·ÖÖ§)
+git checkout -- RD.md (ä¸¢å¼ƒindexä¸­çš„ä¿®æ”¹)
+    git checkout -b develop (åˆ›å»ºå¹¶åˆ‡æ¢åˆ°developåˆ†æ”¯)
 
 git branch [develop]
-    git branch -d develop (É¾³ı±¾µØdevelop·ÖÖ§)
+    git branch -d develop (åˆ é™¤æœ¬åœ°developåˆ†æ”¯)
 
 git merge develop
 
 git pull origin master
 git push origin master
-    git push origin --delete <branchName> (É¾³ıÔ¶³Ì·ÖÖ§) / git push origin :<branchName> (ÍÆËÍ¿Õ·ÖÖ§Ò²Ïàµ±ÓÚÉ¾³ıÔ¶³Ì·ÖÖ§)
-    git push origin --delete tag <tagName> (É¾³ıÔ¶³Ìtag) / git tag -d <tagName>
+    git push origin --delete <branchName> (åˆ é™¤è¿œç¨‹åˆ†æ”¯) / git push origin :<branchName> (æ¨é€ç©ºåˆ†æ”¯ä¹Ÿç›¸å½“äºåˆ é™¤è¿œç¨‹åˆ†æ”¯)
+    git push origin --delete tag <tagName> (åˆ é™¤è¿œç¨‹tag) / git tag -d <tagName>
 
-gitk (²é¿´ËùÓĞÌá½»µÄÃ÷Ï¸)
+gitk (æŸ¥çœ‹æ‰€æœ‰æäº¤çš„æ˜ç»†)
 
-IDEA git¿ì½İ¼ü£º
+æ·»åŠ è¿œç«¯repo
+git remote add upstream git://github.com/pjhyett/github-services.git
+
+IDEA gitå¿«æ·é”®ï¼š
     ctrl+t pull
     ctrl+k commit
     ctrl+shift+k push
