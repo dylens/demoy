@@ -32,10 +32,10 @@ git push origin master
 
 gitk (查看所有提交的明细)
 
-
+git diff <file name> 查看当前工作区和最近一次提交的版本之间的差别（未执行add命令前）
 git diff HEAD^ 查看上一个版本与此版本的差别（HEAD表示当前最新提交的版本）
-git diff HEAD^^ -- <file path> 查看上两个版本的指定文件与此版本的差别
-    git diff HEAD~2 -- <file path>
+git diff HEAD^^ -- <file name> 查看上两个版本的指定文件与此版本的差别
+    git diff HEAD~2 -- <file name>
 
 
 添加远端repo
