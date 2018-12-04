@@ -32,6 +32,12 @@ git push origin master
 
 gitk (查看所有提交的明细)
 
+
+git diff HEAD^ 查看上一个版本与此版本的差别（HEAD表示当前最新提交的版本）
+git diff HEAD^^ -- <file path> 查看上两个版本的指定文件与此版本的差别
+    git diff HEAD~2 -- <file path>
+
+
 添加远端repo
 git remote add upstream git://github.com/pjhyett/github-services.git
 
